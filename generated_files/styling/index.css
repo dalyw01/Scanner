@@ -1,0 +1,301 @@
+body
+{
+	font-family : 'Lato', Calibri, Arial, sans-serif;
+	font-size   : 12px;
+}
+
+#nav_bar
+{
+	position		 : fixed;
+	width			 : 110%;
+	height			 : 50px;
+	margin-top		 : -17px;
+	margin-left		 : -8px;
+	z-index			 : 1;
+	opacity			 : 0.9;
+	background-color : white;
+	color       	 : black;
+	border-bottom    : 1px solid #CCCCCC;
+}
+
+#nav_bar a
+{
+	text-decoration : none;
+	color 			: black;
+}
+
+#nav_bar img
+{
+	vertical-align : text-top;
+}
+
+h1
+{
+	position : relative;
+	left     : 5%;
+}
+
+#wrapper
+{
+	position       : relative;
+	top            : 50px;
+	margin-left    : 5%;
+	padding-bottom : 700px;
+}
+
+#scan_time
+{
+	font-size   : 18px;
+	font-weight : bold;
+}
+
+#stats_summary
+{
+	position : absolute;
+	top 	 : -12px;
+	left	 : 48%;
+	width    : 900px;
+  	display  : flex;
+}
+
+#news_summary
+{
+	position : relative;
+	top      : 28px;
+	left     : -35%;
+	width    : 550px;
+	padding  : 7px;
+  	flex     : 1;
+}
+
+#iplayer_summary
+{
+	position : relative;
+	top      : 28px;
+	left     : -40%;
+	padding  : 7px;
+	flex     : 1;
+}
+
+.stat
+{
+	text-decoration : none;
+}
+
+.caption,.title
+{
+	font-size   : 14px;
+	font-weight : bold;
+}
+
+.entry_style
+{
+	position 	   		: relative;
+	width 		   		: 15%;
+	height 		   		: 530px;
+  	display        		: inline-block;
+  	vertical-align 		: top;
+  	border   	   		: 1px solid #B3B6BF;
+  	background-position : 50% 0%;
+  	background-color    : white;
+}
+
+.entry_style:hover
+{
+  	border : 1px solid black;
+}
+
+.entry_style p
+{
+	position : relative;
+	left     : 5px;
+	padding  : 4px;
+}
+
+.entry_style li
+{
+	position   : relative;
+	left       : -17px;
+	padding    : 4px;
+	list-style : none;
+}
+
+.entry_style hr
+{
+	border: 1px dashed #B3B6BF;
+}
+
+.iplayer_kind_flag_ad
+{
+	top 			 : 05px;
+	width            : 40px;
+	background-color : #214164;
+	color            : white;
+	text-align       : center;
+}
+
+.iplayer_kind_flag_sl
+{
+	top 			 : 05px;
+	width            : 40px;
+	background-color : #1c7e55;
+	color            : white;
+	text-align       : center;
+}
+
+.news_audio_flag
+{
+	top 			 : 05px;
+	width            : 34px;
+	background-color : red;
+	color            : white;
+}
+
+#drop_down
+{
+	position : fixed;
+	z-index  : 1000;
+  	top      : 06px;
+  	left     : 85%;
+}
+
+#drop_down:hover
+{
+	border-left  : 1px solid #CCCCCC;
+	border-right : 1px solid #CCCCCC;
+}
+
+#drop_down:before
+{
+	content     : "▼";
+	cursor      : pointer;
+	font-weight : bold;
+	font-size   : 25px;
+}
+
+#drop_down:focus #links
+{
+    /* content is visible if menu is 'opened' */
+    visibility : visible;
+}
+
+#links
+{
+    position         : absolute;
+    z-index          : 1000;
+	width            : 210px;
+	background-color : white;
+	border           : none;
+	color  			 : black;
+    /* disable visibility by default, delay to enable clicks */
+    visibility       : hidden;
+    transition       : visibility 0.5s;
+}
+
+#links p
+{
+    position : relative;
+	left     : 10px;
+	width    : 80px;
+}
+
+#links li
+{
+	position        : relative;
+	left            : -15px;
+	list-style      : none;
+	color           : black;
+	text-decoration : none;
+}
+
+#links li:hover
+{
+	background-color : #CCCCCC;
+}
+
+#links a
+{
+	text-decoration : none;
+	color : black;
+}
+
+/* ----------- Responsive for web ----------- */
+
+
+@media screen and (max-width: 1024px) and (orientation : portrait) 
+{
+	.caption,.title
+	{
+		font-size   : 1.5em;
+		font-weight : bold;
+	}
+
+	#stats_summary
+	{
+	  	display  : none;
+	}
+
+  	.entry_style
+	{
+		width  	  : 90%;
+		height 	  : 800px;
+		font-size : 2em;
+	}
+
+	#drop_down
+	{
+	  	top       : 08px;
+	  	left      : 70%;
+		font-size : 1.5em;
+	}
+
+	#drop_down:before
+	{
+		font-size : 1.5em;
+	}
+
+	#links
+	{
+		width : 250px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation : landscape) 
+{
+	.caption,.title
+	{
+		font-size   : 1.5em;
+		font-weight : bold;
+	}
+
+	#stats_summary
+	{
+	  	display  : none;
+	}
+
+  	.entry_style
+	{
+		width  	  : 43%;
+		height 	  : 800px;
+		font-size : 1.3em;
+	}
+
+	#drop_down
+	{
+	  	top       : 08px;
+	  	left      : 75%;
+		font-size : 1.5em;
+	}
+
+	#drop_down:before
+	{
+		font-size : 1.5em;
+	}
+
+	#links
+	{
+		width : 250px;
+	}
+}
+
+/* ---------------------- */
