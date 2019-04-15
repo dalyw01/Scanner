@@ -1,5 +1,5 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# Author : william.daly@bbc.co.uk
+# Author : William Daly
 # Desc   : This is the file you execute to initialise Scanner and for it to grab + print content
 #          Once complete this script will generate "index.html" 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
