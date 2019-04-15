@@ -73,4 +73,4 @@ ruby upload_scanner.rb
 
 ## Author
 
-william.daly@bbc.co.uk
+William Daly

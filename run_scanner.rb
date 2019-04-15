@@ -4,10 +4,9 @@
 #          Once complete this script will generate "index.html" 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-require_relative 'ScannerHTML.rb'
+require_relative 'Scanner.rb'
 
-scanner = ScannerHTML.new
-scanner_json = ScannerJSON.new
+scanner = Scanner.new
 
 iplayer_total = scanner.getIplayerTotalVpids()
 
