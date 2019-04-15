@@ -35,7 +35,7 @@ To run it, you need Ruby installed on your local machine.
 ## What version of ruby?
 
 ```
-ruby 2.3.1
+ruby 2.6.2
 ```
 
 ## How do I upload Scanner?
