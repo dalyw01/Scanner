@@ -8,6 +8,8 @@ It's run daily providing fresh video and audio content for testing.
 
 Once completed, Scanner generates a HTML file which is then hosted on an S3 Bucket
 
+![An image displaying HTML output of Scanner](scanner.jpg)
+
 ## How do I run it?
 
 First clone your own copy from this GitHub repo
